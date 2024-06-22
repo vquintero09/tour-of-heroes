@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IHero } from './Interfaces/heroes.interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'AppHeroes';
+  title = 'Tour of Heroes';
+
+  hero: IHero = {
+    id: 1,
+    name: 'Windstorm'
+  }
 }
+
